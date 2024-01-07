@@ -1,4 +1,4 @@
-const prefix = process.env.NEXT_PUBLIC_BASE_PATH ? '' : '/blog';
+
 
 /**
  * @type {import('next').NextConfig}
@@ -18,7 +18,6 @@ const nextConfig = {
     images: {
         unoptimized: true 
     },
-    basePath: prefix,
 }
 
 module.exports = nextConfig
