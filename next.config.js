@@ -1,3 +1,5 @@
+const prefix = process.env.NEXT_PUBLIC_BASE_PATH ? '' : '/blog';
+
 /**
  * @type {import('next').NextConfig}
  */
@@ -14,9 +16,9 @@ const nextConfig = {
     // distDir: 'dist',
     reactStrictMode: true,
     images: {
-        path: "/blog/",
         unoptimized: true 
     },
+    basePath: prefix,
 }
 
 module.exports = nextConfig
