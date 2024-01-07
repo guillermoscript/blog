@@ -12,6 +12,10 @@ const nextConfig = {
 
     // Optional: Change the output directory `out` -> `dist`
     // distDir: 'dist',
+    reactStrictMode: true,
+    images: {
+        path: "/",
+    },
 }
 
 module.exports = nextConfig
