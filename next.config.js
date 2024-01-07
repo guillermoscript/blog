@@ -15,7 +15,7 @@ const nextConfig = {
     reactStrictMode: true,
     images: {
         path: "/blog/",
-        images: { unoptimized: true }
+        unoptimized: true 
     },
 }
 
