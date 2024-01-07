@@ -14,7 +14,8 @@ const nextConfig = {
     // distDir: 'dist',
     reactStrictMode: true,
     images: {
-        path: "/",
+        path: "/blog/",
+        images: { unoptimized: true }
     },
 }
 
