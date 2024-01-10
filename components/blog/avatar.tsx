@@ -1,4 +1,4 @@
-import { prefix } from "../lib/constants"
+import { prefix } from "../../lib/constants"
 
 type Props = {
   name: string

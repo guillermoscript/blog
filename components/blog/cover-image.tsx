@@ -1,6 +1,6 @@
 import cn from 'classnames'
 import Link from 'next/link'
-import { prefix } from '../lib/constants'
+import { prefix } from '../../lib/constants'
 
 type Props = {
   title: string
