@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import ThemeSwitch from "./theme-switch";
+import { prefix } from "@/lib/constants";
 
 const links = [
     { href: "/", text: "Blog" },
@@ -11,7 +12,7 @@ const links = [
 export default function Header() {
     return (
         <header
-            className="flex  items-center justify-between py-4 px-10"
+            className="flex h-20 items-center justify-between py-4 px-10"
         >
             <div
                 className="flex items-center justify-center  md:justify-start gap-3"
@@ -20,7 +21,7 @@ export default function Header() {
                 className="text-sm md:text-lg lg:text-xl font-bold tracking-tighter leading-tight md:leading-none text-center md:text-left"
             >GuillermoScript Blog</h5>
             <Image
-                src="/assets/blog/authors/hacker.jpg"
+                src={`${prefix}/assets/blog/authors/hacker.jpg`}
                 alt="Picture of what a hacker looks like to general public"
                 width={50}
                 height={40}
