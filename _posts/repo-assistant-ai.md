@@ -9,9 +9,16 @@ author:
   picture: '/assets/blog/authors/hacker.jpg'
 ogImage:
   url: '/assets/blog/repo-assistant-ai/cover.jpg'
+timeToRead: 7
 ---
 
 #  AI-Powered GitHub Issue Deduplicator: Streamline Your Issue Management
+
+## TL;DR
+
+The checkout the hole code go to the [GitHub repo](https://github.com/guillermoscript/repo-assistant). What I did is use Probot to create a GitHub app that uses OpenAI's API to generate embeddings of the issue text and then store them in a Supabase database. When a new issue is submitted, the bot: check if this is a duplicate or not and if it is, it will label it as a duplicate and add a comment linking to the original issue. If it is not a duplicate, it will add a comment saying that it is not a duplicate and add the correct labels if they were not added in the first place. If you want to know more about the code, keep reading.
+
+## Simplifying Issue Management with AI
 
 Managing a busy GitHub repository can be overwhelming, especially when it comes to tracking and handling duplicate issues. As your project grows, the influx of issues can lead to clutter and confusion, ultimately slowing down your development process. That's why we've developed an innovative solution - **The GitHub Issue Deduplicator** - a Probot-based GitHub app powered by the latest advancements in AI from OpenAI embeddings and the robust database capabilities of Supabase.
 
