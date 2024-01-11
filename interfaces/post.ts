@@ -11,6 +11,7 @@ type PostType = {
     url: string
   }
   content: string
+  timeToRead: number
 }
 
 export default PostType
